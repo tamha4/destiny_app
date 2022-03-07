@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Destiny App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="destiny-app">
+    <div class="card blue">
+        <img src="https://swdestinydb.com/bundles/cards/en/01/01038.jpg">
+        <div v-for="card in cards">
+            <div class="health">
+                <div v-for="card in cards.slice(0,1)">
+                    <p>{{card.health}}</p>
+                </div>
+            </div>
+            <div class="rarity legendary">
+                <div v-for="card in cards.slice(0,1)">
+                    <p>{{card.setNumber}}</p>
+                </div>
+            </div>
+            <div class="name">
+                <div v-for="card in cards.slice(0,1)">
+                    <p>{{card.name}}</p>
+                </div>
+            </div>
+            <div class="affl hero">
+                <div v-for="card in cards.slice(0,1)">
+                    <p>{{card.affl}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card yellow">
+        <img src="https://images-cdn.fantasyflightgames.com/filer_public/3b/15/3b1513ab-1bf2-46f9-93ec-9fb0246e567b/sws17_main.png">
+        <div v-for="card in cards">
+            <div class="health">
+                <div v-for="card in cards.slice(-3,-2)">
+                    <p>{{card.health}}</p>
+                </div>
+            </div>
+            <div class="rarity legendary">
+                <div v-for="card in cards.slice(-3,-2)">
+                    <p>{{card.setNumber}}</p>
+
+                </div>
+            </div>
+            <div class="name">
+                <div v-for="card in cards.slice(-3,-2)">
+                    <p>{{card.name}}</p>
+                </div>
+            </div>
+            <div class="affl hero">
+                <div v-for="card in cards.slice(-3,-2)">
+                    <p>{{card.affl}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card red">
+        <img src="https://i.pinimg.com/originals/67/fe/ca/67feca5ed7040713e386d568860701a8.jpg">
+        <div v-for="card in cards">
+            <div class="health">
+                <div v-for="card in cards.slice(-2,-1)">
+                    <p>{{card.health}}</p>
+                </div>
+            </div>
+            <div class="rarity rare">
+                <div v-for="card in cards.slice(-2,-1)">
+                    <p>{{card.setNumber}}</p>
+                </div>
+            </div>
+            <div class="name">
+                <div v-for="card in cards.slice(-2,-1)">
+                    <p>{{card.name}}</p>
+                </div>
+            </div>
+            <div class="affl villain">
+                <p>{{card.affl}}</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card blue">
+        <img src="https://images-cdn.fantasyflightgames.com/filer_public/70/2d/702dba51-4b9f-46db-ad74-36216b9fdbe9/swd13_preview2.jpg">
+        <div v-for="card in cards">
+            <div class="health">
+                <p>{{card.health}}</p>
+            </div>
+            <div class="rarity rare">
+                <p>{{card.setNumber}}</p>
+            </div>
+            <div class="name">
+                <p>{{card.name}}</p>
+            </div>
+            <div class="affl villain">
+                <p>{{card.affl}}</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
